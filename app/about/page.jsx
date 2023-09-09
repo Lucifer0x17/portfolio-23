@@ -7,9 +7,9 @@ const AboutPage = () => {
   return (
     <div>
       {/* top header */}
-      <div>
+      <div className="text-8xl grid justify-center items-center tracking-tighter">
         <h1>BACKEND SPECIALIST</h1>
-        <h1>MERN DEVELOPER</h1>
+        <h1 className="j justify-self-center">MERN DEVELOPER</h1>
       </div>
       {/* white rectangle */}
       <div>

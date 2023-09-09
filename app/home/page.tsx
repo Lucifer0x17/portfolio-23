@@ -8,7 +8,7 @@ const HomePage = () => {
   return (
     <>
       <div className="h-[100vh] w-[100vw] showcaseBg grid">
-        <div className="grid h-[180px] w-[100vw] place-items-end grid-cols-1 hover:-mt-12 -mt-24">
+        <div className="grid h-[180px] w-fit justify-self-end place-items-end grid-cols-1 hover:-mt-12 -mt-24">
           <Image
             src={githubLogo}
             height={90}
