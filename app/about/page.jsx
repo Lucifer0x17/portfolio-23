@@ -2,36 +2,53 @@ import React from "react";
 import Image from "next/image";
 import luci from "@/assets/luci.jpeg";
 import calender from "@/assets/calender.png";
+import { Koulen, Lato } from "next/font/google";
+
+const lato = Lato({
+  subsets: ["latin"],
+  weight: ["100", "300", "400", "700"],
+  style: ["normal", "italic"],
+});
+const koulen = Koulen({
+  subsets: ["latin"],
+  weight: ["400"],
+  style: ["normal"],
+});
 
 const AboutPage = () => {
   return (
     <div>
       {/* top header */}
-      <div className="text-8xl grid justify-center items-center tracking-[-0.5rem] pt-32">
-        <h1>BACKEND SPECIALIST</h1>
-        <h1 className="justify-self-center">MERN DEVELOPER</h1>
+      <div className="text-9xl grid justify-center items-center pt-32 text-center">
+        <h1 className={koulen.className}>BACKEND SPECIALIST</h1>
+        <h1 className={koulen.className}>MERN DEVELOPER</h1>
       </div>
       {/* white rectangle */}
       <div className="rounded-[39px] bg-[#eeeeee] mx-24 text-[#121212] px-12 py-20 my-12">
         {/* about */}
         <div className="grid grid-cols-3">
-          <h2 className="text-2xl tracking-[-0.1rem] font-semibold col-span-1">
-            ABOUT
+          <h2 className="text-4xl font-semibold col-span-1">
+            <span className={koulen.className}>ABOUT</span>
           </h2>
-          <p className="col-span-2 text-xl font-light">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nulla,
-            reprehenderit voluptatibus enim commodi laborum, veritatis
-            consectetur pariatur, modi quod autem? Modi optio quo fuga
-            aspernatur ab cumque corrupti exercitationem?
+          <p className="col-span-2 text-3xl font-normal">
+            <span className={lato.className}>
+              {" "}
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+              nulla, reprehenderit voluptatibus enim commodi laborum, veritatis
+              consectetur pariatur, modi quod autem? Modi optio quo fuga
+              aspernatur ab cumque corrupti exercitationem?
+            </span>
           </p>
         </div>
         {/* logos */}
         <div></div>
         {/* workEx */}
         <div className="pt-20">
-          <h2 className="text-2xl tracking-[-0.1rem] font-semibold">WORK</h2>{" "}
-          <h2 className="text-2xl tracking-[-0.1rem] font-semibold -mt-[10px] pb-3">
-            EXPERIENCE
+          <h2 className="text-4xl tracking-[-0.1rem] font-semibold">
+            <span className={koulen.className}>WORK</span>
+          </h2>{" "}
+          <h2 className="text-4xl tracking-[-0.1rem] font-semibold -mt-[10px] pb-3">
+            <span className={koulen.className}>EXPERIENCE</span>
           </h2>
           <div>
             <div className="grid gap-6 grid-cols-4">
@@ -152,33 +169,34 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
+      {/* contact */}
       <div className="grid grid-cols-1 justify-center items-center">
-        <div className="grid grid-cols-3 text-9xl font-extrabold tracking-tighter items-end place-items-center px-20">
+        <div className="grid grid-cols-3 text-9xl font-extrabold tracking-tighter items-end place-items-center px-52 pb-9">
           {" "}
           <h1 className="">LET'S</h1>
           <Image src={luci} height={300} width={300} className="rounded-full" />
           <h1>WORK</h1>
         </div>
-        <h4 className="bg-[#363636] h-fit w-fit text-3xl font-extralight my-6 justify-self-center self-center">
+        <h4 className="bg-[#363636] h-fit w-fit text-[27px] font-extralight my-6 justify-self-center self-center mb-9">
           Feel Free To Reach Out To Me. I'm Always Open To Discuss New Projects.
         </h4>
         {/* socials */}
-        <div className="grid grid-cols-5 px-30">
-          <div className="grid grid-cols-2 gap-0 col-span-1">
-            <div className="bg-[#eeeeee] text-[#212121] rounded-full px-3 py-3 h-2 w-2 place-self-end self-center"></div>
-            <span className="hover:bg-[#eeeeee] hover:text-[#212121] hover:rounded-full text-4xl px-6 py-1 font-extralight">
+        <div className="grid grid-cols-5 px-30 mx-20 mb-12">
+          <div className="grid grid-cols-4 gap-0 col-span-1 justify-self-center self-center">
+            <div className="bg-[#eeeeee] text-[#212121] rounded-full px-3 py-3 h-2 w-2 place-self-end self-center col-span-1"></div>
+            <span className="hover:bg-[#eeeeee] hover:text-[#212121] hover:rounded-full text-3xl px-6 py-1 font-extralight col-span-3">
               GitHub
             </span>
           </div>
-          <div className="grid grid-cols-2 gap-0 col-span-2">
-            <div className="bg-[#eeeeee] text-[#212121] rounded-full px-3 py-3 h-2 w-2 place-self-end self-center"></div>
-            <span className="hover:bg-[#eeeeee] hover:text-[#212121] hover:rounded-full text-4xl px-6 py-1 font-extralight">
+          <div className="grid grid-cols-7 gap-0 col-span-3 justify-self-center self-center">
+            <div className="bg-[#eeeeee] text-[#212121] rounded-full px-3 py-3 h-2 w-2 place-self-end self-center col-span-1"></div>
+            <span className="hover:bg-[#eeeeee] hover:text-[#212121] hover:rounded-full text-3xl px-6 py-1 font-extralight col-span-6">
               lucifer0x17@gmail.com
             </span>
           </div>
-          <div className="grid grid-cols-2 gap-0 col-span-1">
-            <div className="bg-[#eeeeee] text-[#212121] rounded-full px-3 py-3 h-2 w-2 place-self-end self-center"></div>
-            <span className="hover:bg-[#eeeeee] hover:text-[#212121] hover:rounded-full text-4xl px-6 py-1 font-extralight">
+          <div className="grid grid-cols-4 gap-0 col-span-1 justify-self-center self-center">
+            <div className="bg-[#eeeeee] text-[#212121] rounded-full px-3 py-3 h-2 w-2 place-self-end self-center col-span-1"></div>
+            <span className="hover:bg-[#eeeeee] hover:text-[#212121] hover:rounded-full text-3xl px-6 py-1 font-extralight col-span-3">
               LinkedIn
             </span>
           </div>
