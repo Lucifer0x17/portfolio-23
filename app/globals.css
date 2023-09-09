@@ -15,6 +15,10 @@
   transform: rotate(180deg);
 }
 
+.rotate12 {
+  transform: rotate(12deg);
+}
+
 .rotate {
   animation: rotation 9s infinite linear;
 }
