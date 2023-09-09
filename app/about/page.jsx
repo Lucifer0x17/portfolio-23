@@ -3,6 +3,7 @@ import Image from "next/image";
 import luci from "@/assets/luci.jpeg";
 import calender from "@/assets/calender.png";
 import { Koulen, Lato } from "next/font/google";
+import WorkEx from "../components/WorkEx";
 
 const lato = Lato({
   subsets: ["latin"],
@@ -16,6 +17,7 @@ const koulen = Koulen({
 });
 
 const AboutPage = () => {
+  // const [workData, setWorkData] = useState("hidden");
   return (
     <div>
       {/* top header */}
@@ -51,6 +53,7 @@ const AboutPage = () => {
             <span className={koulen.className}>EXPERIENCE</span>
           </h2>
           <div>
+            <WorkEx dates="" company="heee" role="" tech="" />
             <div className="grid gap-6 grid-cols-4">
               <h5 className="text-md font-extralight">Jul 2022 - Aug 2022</h5>
               <h3 className="text-xl font-light">
@@ -60,6 +63,24 @@ const AboutPage = () => {
               <p className="text-sm font-semibold italic text-right">
                 Astro, Mermaid, Markdowns, GitLab, MongoDB, Fast API
               </p>
+            </div>
+            <div className="grid grid-cols-4">
+              <div className="col-span-1"></div>
+              <div className="col-span-3 font-light text-lg pt-3 italic">
+                <ul>
+                  <li>
+                    Refined MongoDB monitoring system resulting in performance
+                    gain by 40% and made a Smart alert notification on Microsoft
+                    Teams, reducing minor notifications by 10%{" "}
+                  </li>
+                  <li>
+                    Implemented correlation between logs and 1000+ metrics
+                    reducing the summary time by 50% and provided visualization
+                    of continuous stream of both which can be zoomed in up to 2
+                    seconds
+                  </li>
+                </ul>
+              </div>
             </div>
             <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-400" />
             <div className="grid gap-6 grid-cols-4">

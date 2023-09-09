@@ -9,12 +9,6 @@ export const metadata: Metadata = {
   description: "Ayush's Portfolio",
 };
 
-const koulen = Koulen({
-  subsets: ["latin"],
-  weight: ["400"],
-  style: ["normal"],
-});
-
 export default function RootLayout({
   children,
 }: {
