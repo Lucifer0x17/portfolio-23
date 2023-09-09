@@ -2,6 +2,7 @@ import Image from "next/image";
 import githubLogo from "@/assets/github.png";
 import githubText from "@/assets/githubcurve.svg";
 import line from "@/assets/line.png";
+import Navbar from "../components/Navbar";
 
 const HomePage = () => {
   return (
@@ -23,7 +24,7 @@ const HomePage = () => {
             className="mr-[45px] right-[45px] rotate -mt-[180px]"
           />
         </div>
-        <div>
+        <div className="absolute top-[330px]">
           <div className="flex">
             {" "}
             <Image src={line} height={20} width={300} alt="ayush agrawal" />
