@@ -17,7 +17,7 @@ const DataRow = ({ experience , education } : DataProps) => {
               <div className="col-span-1"></div>
               <div className="col-span-3 font-light text-lg pt-3 italic">
                 <ul>
-                 {experience.desc?.map((bullet,id) => <li key={id}>{bullet}</li>)}
+                 {experience.description?.map((bullet,id) => <li key={id}>{bullet}</li>)}
                 </ul>
               </div>
             </div>

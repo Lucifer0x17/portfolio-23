@@ -5,7 +5,7 @@ export type Experience = {
     title: string;
     location: string;
     technologies: string;
-    desc: string[];
+    description: string[];
 }
 
 export type Education = {
