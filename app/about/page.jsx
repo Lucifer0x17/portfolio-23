@@ -96,12 +96,12 @@ const AboutPage = () => {
       <div className="grid grid-cols-1 justify-center items-center">
         <div className="grid grid-cols-3 text-9xl font-extrabold tracking-tighter items-end place-items-center px-52 pb-9">
           
-          <h1 className="">LET&aposS</h1>
+          <h1 className="">LET&apos;S</h1>
           <Image src={luci} height={300} width={300} className="rounded-full" alt="No img found"/>
           <h1>WORK</h1>
         </div>
         <h4 className="bg-[#363636] h-fit w-fit text-[27px] font-extralight my-6 justify-self-center self-center mb-9">
-          Feel Free To Reach Out To Me. I&aposm Always Open To Discuss New Projects.
+          Feel Free To Reach Out To Me. I&apos;m Always Open To Discuss New Projects.
         </h4>
         {/* socials */}
         <div className="grid grid-cols-5 px-30 mx-20 mb-12">
