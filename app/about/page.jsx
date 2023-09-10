@@ -20,25 +20,42 @@ const AboutPage = () => {
   // const [workData, setWorkData] = useState("hidden");
   return (
     <div>
+      {/* upper bar */}
+      <div className="grid grid-cols-12 text-[#eeeeee] px-6 py-3 place-items-center">
+        <h4 className={`col-span-1 ${koulen.className} text-3xl`}>AYUSH</h4>
+        <h5 className={`col-span-2 ${lato.className} text-xl font-light`}>
+          Backend Developer
+        </h5>
+        <div className="col-span-4"></div>
+        <h5
+          className={`col-span-3 ${lato.className} text-xl font-light justify-self-end`}
+        >
+          Available September 2023
+        </h5>
+        <div className="col-span-2 bg-[#eeeeee] text-[#212121] w-fit h-fit px-[20px] py-[8px] rounded-full justify-self-end hover:bg-[#212121] hover:text-[#eeeeee] hover:border-2 border-solid hover:px-[18px] hover:py-[6px]">
+          <h4>Get in Touch</h4>
+        </div>
+      </div>
       {/* top header */}
-      <div className="text-9xl grid justify-center items-center pt-32 text-center">
+      <div className="text-9xl grid justify-center items-center pt-24 text-center">
         <h1 className={koulen.className}>BACKEND SPECIALIST</h1>
         <h1 className={koulen.className}>MERN DEVELOPER</h1>
       </div>
       {/* white rectangle */}
-      <div className="rounded-[39px] bg-[#eeeeee] mx-24 text-[#121212] px-12 py-20 my-12">
+      <div className="rounded-[27px] bg-[#eeeeee] mx-12 text-[#121212] px-12 py-20 my-12">
         {/* about */}
-        <div className="grid grid-cols-3">
+        <div className="grid grid-cols-4 px-16">
           <h2 className="text-4xl font-semibold col-span-1">
             <span className={koulen.className}>ABOUT</span>
           </h2>
-          <p className="col-span-2 text-3xl font-normal">
+          <p className="col-span-3 text-6xl font-normal leading-[80px]">
             <span className={lato.className}>
-              
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-              nulla, reprehenderit voluptatibus enim commodi laborum, veritatis
-              consectetur pariatur, modi quod autem? Modi optio quo fuga
-              aspernatur ab cumque corrupti exercitationem?
+              nulla, reprehenderit voluptatibus enim commodi laborum,
+            </span>
+            <span className={`text-4xl leading-[30px] ${lato.className}`}>
+              veritatis consectetur pariatur, modi quod autem? Modi optio quo
+              fuga aspernatur ab cumque corrupti exercitationem?
             </span>
           </p>
         </div>
@@ -46,14 +63,20 @@ const AboutPage = () => {
         <div></div>
         {/* workEx */}
         <div className="pt-20">
-          <h2 className={`text-4xl tracking-[-0.1rem] font-semibold ${koulen.className}`}>
+          <h2
+            className={`pl-16 text-4xl tracking-[-0.1rem] font-semibold ${koulen.className}`}
+          >
             WORK
           </h2>
-          <h2 className={`text-4xl tracking-[-0.1rem] font-semibold ${koulen.className}`}>
+          <h2
+            className={`pb-12 text-4xl tracking-[-0.1rem] font-semibold ${koulen.className}`}
+          >
             EXPERIENCE
           </h2>
           <div>
-            {workEx.map((experience,id) => <DataRow key={id} experience={experience}/>)}
+            {workEx.map((experience, id) => (
+              <DataRow key={id} experience={experience} />
+            ))}
           </div>
         </div>
         {/* Education */}
@@ -79,7 +102,6 @@ const AboutPage = () => {
         {/* more about */}
         <div className="grid pt-20 grid-cols-3">
           <div className="col-span-1">
-            
             <h2 className="text-2xl tracking-[-0.1rem] font-semibold">
               STILL CURIOUS?
             </h2>
@@ -95,13 +117,19 @@ const AboutPage = () => {
       {/* contact */}
       <div className="grid grid-cols-1 justify-center items-center">
         <div className="grid grid-cols-3 text-9xl font-extrabold tracking-tighter items-end place-items-center px-52 pb-9">
-          
           <h1 className="">LET&apos;S</h1>
-          <Image src={luci} height={300} width={300} className="rounded-full" alt="No img found"/>
+          <Image
+            src={luci}
+            height={300}
+            width={300}
+            className="rounded-full"
+            alt="No img found"
+          />
           <h1>WORK</h1>
         </div>
         <h4 className="bg-[#363636] h-fit w-fit text-[27px] font-extralight my-6 justify-self-center self-center mb-9">
-          Feel Free To Reach Out To Me. I&apos;m Always Open To Discuss New Projects.
+          Feel Free To Reach Out To Me. I&apos;m Always Open To Discuss New
+          Projects.
         </h4>
         {/* socials */}
         <div className="grid grid-cols-5 px-30 mx-20 mb-12">
@@ -146,32 +174,32 @@ const AboutPage = () => {
 
 export default AboutPage;
 
-
 const workEx = [
   {
-    startDate: "Jan 2022", 
+    startDate: "Jan 2022",
     endDate: "May 2022",
     company: "Dell Technologies",
-    title:"Undergraduate Intern",
+    title: "Undergraduate Intern",
     location: "Hyderabad (Remote)",
-    technologies:"Astro, Mermaid, Markdowns, GitLab, MongoDB, Fast API",
+    technologies: "Astro, Mermaid, Markdowns, GitLab, MongoDB, Fast API",
     description: [
       "lorem ksjvjkbvb dknkbd svjksvn svnsvnkvk skvjvfk svknsvnkl svjvjfk svknsvjdk ajnkvs svjs svbjs svnsv",
       "lorem ksjvjkbvb dknkbd svjksvn svnsvnkvk skvjvfk svknsvnkl svjvjfk svknsvjdk ajnkvs svjs svbjs svnsv",
-      "lorem ksjvjkbvb dknkbd svjksvn svnsvnkvk skvjvfk svknsvnkl svjvjfk svknsvjdk ajnkvs svjs svbjs svnsv"
-    ]
+      "lorem ksjvjkbvb dknkbd svjksvn svnsvnkvk skvjvfk svknsvnkl svjvjfk svknsvjdk ajnkvs svjs svbjs svnsv",
+    ],
   },
   {
-    startDate: "Jan 2022", 
+    startDate: "Jan 2022",
     endDate: "Aug 2022",
     company: "Astrotech Labs",
-    title:"Backend and Infrastructure Developer",
+    title: "Backend and Infrastructure Developer",
     location: "Singapore (Remote)",
-    technologies:"TypeScript, Express.js, Node,js, DynamoDB, Serverless, GraphQL, Lambda, CI/CD, Firebase, Firestore, Cloud Functions, Python",
+    technologies:
+      "TypeScript, Express.js, Node,js, DynamoDB, Serverless, GraphQL, Lambda, CI/CD, Firebase, Firestore, Cloud Functions, Python",
     description: [
       "lorem ksjvjkbvb dknkbd svjksvn svnsvnkvk skvjvfk svknsvnkl svjvjfk svknsvjdk ajnkvs svjs svbjs svnsv",
       "lorem ksjvjkbvb dknkbd svjksvn svnsvnkvk skvjvfk svknsvnkl svjvjfk svknsvjdk ajnkvs svjs svbjs svnsv",
-      "lorem ksjvjkbvb dknkbd svjksvn svnsvnkvk skvjvfk svknsvnkl svjvjfk svknsvjdk ajnkvs svjs svbjs svnsv"
-    ]
-  }
-]
+      "lorem ksjvjkbvb dknkbd svjksvn svnsvnkvk skvjvfk svknsvnkl svjvjfk svknsvjdk ajnkvs svjs svbjs svnsv",
+    ],
+  },
+];
