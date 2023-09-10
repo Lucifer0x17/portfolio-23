@@ -2,9 +2,8 @@ import Image from "next/image";
 import githubLogo from "@/assets/github.png";
 import githubText from "@/assets/githubcurve.svg";
 import line from "@/assets/line.png";
-import Navbar from "../components/Navbar";
 
-const HomePage = () => {
+const HomePage = async () => {
   return (
     <>
       <div className="h-[100vh] w-[100vw] showcaseBg grid">
