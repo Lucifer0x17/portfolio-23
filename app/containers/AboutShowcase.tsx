@@ -15,7 +15,7 @@ const Showcase = () => {
     <>
       {" "}
       {/* upper bar */}
-      <div className="grid grid-cols-12 text-[#eeeeee] px-6 py-3 place-items-center">
+      <div className="fixed w-[100vw] grid grid-cols-12 text-[#eeeeee] mix-blend-difference px-8 py-3 place-items-center">
         <h4 className={`col-span-1 ${koulen.className} text-3xl`}>AYUSH</h4>
         <h5 className={`col-span-2 ${lato.className} text-xl font-light`}>
           Backend Developer

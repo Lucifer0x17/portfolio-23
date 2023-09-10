@@ -5,6 +5,24 @@
 * {
   margin: 0;
   padding: 0;
+  /* cursor: none; */
+  cursor: url("../assets/cursor.png"), auto;
+}
+
+.cursor {
+  z-index: 999;
+  position: fixed;
+  background: #eeeeee;
+  /* border: 3px solid #ffffff; */
+  mix-blend-mode: difference;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  pointer-events: none;
+  /* box-shadow: 0 0 20px #2696e8, 0 0 60px #2696e8, 0 0 100px #2696e8; */
+  animation: colors 5s infinite;
+  transform: translate(-50%, -50%);
+  display: none;
 }
 
 .showcaseBg {

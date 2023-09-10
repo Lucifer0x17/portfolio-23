@@ -7,6 +7,7 @@ import WorkExperience from "../containers/WorkExperience";
 import Education from "../containers/Education";
 import MoreAbout from "../containers/MoreAbout";
 import AboutPara from "../containers/AboutPara";
+import Cursor from "../components/Cursor";
 
 const lato = Lato({
   subsets: ["latin"],
