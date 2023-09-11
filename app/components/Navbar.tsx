@@ -11,6 +11,7 @@ import Image from "next/image";
 // import aboutB from "@/assets/aboutB.svg";
 // import dotB from "@/assets/dotB.svg";
 import { Koulen, Lato } from "next/font/google";
+import home from "@/app/home/page";
 
 const lato = Lato({
   subsets: ["latin"],
@@ -134,13 +135,20 @@ const Navbar = () => {
           {/* <div className="absolute bottom-6 left-[66%] border-[#212121] border-solid border-2 rounded-full px-3"></div> */}
           <div className="col-span-1 py-5 px-5 place-self-end border-t-4 border-s-4 mix-blend-difference border-[#eeeeee] border-solid rounded-tl-2xl"></div>
           <div className="col-span-6 grid grid-cols-12 place-items-center pb-6">
-            <h3 className="col-span-3 hover:mb-3">HOME</h3>
+            <Link href="/home" className="col-span-3 hover:mb-3">
+              <h3 className="">HOME</h3>
+            </Link>
             <h3 className="col-span-1">•</h3>
-            <h3 className="col-span-4 hover:mb-3">PROJECTS</h3>
+            <Link href="/projects" className="col-span-4 hover:mb-3">
+              <h3 className="">PROJECTS</h3>
+            </Link>
             <h3 className="col-span-1">•</h3>
-            <h3 className="col-span-3 hover:mb-3 border-b-[3px] border-solid mix-blend-difference border-[#eeeeee]">
-              ABOUT
-            </h3>
+            <Link
+              href="/about"
+              className="col-span-3 hover:mb-3 border-b-[3px] border-solid mix-blend-difference border-[#eeeeee]"
+            >
+              <h3 className="">ABOUT</h3>
+            </Link>
           </div>
           <div className="col-span-1 py-5 px-5 place-self-end border-t-4 border-e-4 mix-blend-difference border-[#eeeeee] border-solid rounded-tr-2xl"></div>
         </div>
