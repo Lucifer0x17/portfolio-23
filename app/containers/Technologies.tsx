@@ -4,6 +4,18 @@ import path from "path";
 import React from "react";
 import Image from "next/image";
 import TechColumn from "../components/TechColumn";
+import { Koulen, Lato } from "next/font/google";
+
+const lato = Lato({
+  subsets: ["latin"],
+  weight: ["100", "300", "400", "700"],
+  style: ["normal", "italic"],
+});
+const koulen = Koulen({
+  subsets: ["latin"],
+  weight: ["400"],
+  style: ["normal"],
+});
 
 const Technologies = async () => {
   const imageDirectory = path.join(process.cwd(), "/public/techs");
@@ -21,9 +33,11 @@ const Technologies = async () => {
   const imageFilenamesArr = chunkArray(imageFilenames, 3);
 
   return (
-    <div className="text-[#212121]">
-      <h1>I WORK WITH</h1>
-      <div className="grid grid-cols-7 downAlt">
+    <div className="text-[#212121] slider">
+      <h1 className={`text-6xl font-light ${lato.className} pb-12`}>
+        I WORK WITH:
+      </h1>
+      <div className="grid grid-flow-col downAlt">
         {imageFilenamesArr.map((ex: Array<string>) => (
           <TechColumn images={ex} />
         ))}
