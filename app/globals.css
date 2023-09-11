@@ -49,3 +49,15 @@
     transform: rotate(359deg);
   }
 }
+
+.downAlt > :nth-child(even) {
+  padding-top: 120px;
+}
+
+/* .lefting > :nth-child(even) {
+  padding-left: 90px;
+}
+
+.lefting > :nth-child(odd) {
+  padding-right: 90px;
+} */

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import githubLogo from "@/assets/github.png";
 import githubText from "@/assets/githubcurve.svg";
-import line from "@/assets/line.png";
+// import line from "@/assets/line.png";
 
 const HomePage = async () => {
   return (
@@ -23,11 +23,13 @@ const HomePage = async () => {
             className="mr-[45px] right-[45px] rotate -mt-[180px]"
           />
         </div>
-        <div className="absolute top-[330px]">
-          <div className="flex">
+        <div className="absolute top-[330px] w-[100vw]">
+          <div className="grid grid-cols-3 w-[60%]">
             {" "}
-            <Image src={line} height={20} width={300} alt="ayush agrawal" />
-            <h1 className="font-extralight text-6xl">AYUSH AGRAWAL</h1>
+            <hr className="col-span-1 h-[1px] w-full my-8 bg-gray-200 border-0 dark:bg-gray-400" />
+            <h1 className="col-span-2 font-extralight text-6xl place-self-stretch">
+              AYUSH AGRAWAL
+            </h1>
           </div>
           <h2 className="text-[42px] font-thin italic">
             LOREM TEXT HERE BACKEND DEVELOPER

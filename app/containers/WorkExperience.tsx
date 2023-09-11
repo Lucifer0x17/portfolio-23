@@ -1,5 +1,8 @@
 import DataRow from "../components/DataRow";
 import { Koulen, Lato } from "next/font/google";
+import sanityClient from "@/sanity/config/client.config";
+import { groq } from "next-sanity";
+const query = groq`*[_type == "experience"]`;
 
 const lato = Lato({
   subsets: ["latin"],
@@ -12,7 +15,10 @@ const koulen = Koulen({
   style: ["normal"],
 });
 
-const WorkExperience = () => {
+const WorkExperience = async () => {
+  const workExp = await sanityClient.fetch(query);
+  // console.log("data:", workExp);
+
   return (
     <div className="pt-20">
       <h2
