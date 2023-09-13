@@ -26,7 +26,14 @@ const AboutPage = () => {
     <div>
       <AboutShowcase />
       {/* white rectangle */}
-      <div className="rounded-[27px] bg-[#eeeeee] mx-12 text-[#121212] px-12 py-20 my-12">
+      <div
+        className="rounded-[27px] 
+        lg:bg-[#d01818]
+      md:bg-[#123456]
+      sm:bg-[#567890] 
+      bg-[#456789]
+      mx-12 text-[#121212] px-12 py-20 my-12"
+      >
         <AboutPara />
         {/* logos */}
         <div></div>
