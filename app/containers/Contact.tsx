@@ -1,12 +1,19 @@
 import Image from "next/image";
 import luci from "@/assets/luci.jpeg";
 import calender from "@/assets/calender.png";
+import { Koulen } from "next/font/google";
+
+const koulen = Koulen({
+  subsets: ["latin"],
+  weight: ["400"],
+  style: ["normal"],
+});
 
 const Contact = () => {
   return (
     <div className="grid grid-cols-1 justify-center items-center">
-      <div className="grid grid-cols-3 text-9xl font-extrabold tracking-tighter items-end place-items-center px-52 pb-9">
-        <h1 className="">LET&apos;S</h1>
+      <div className="grid grid-cols-3 text-[210px] font-extrabold tracking-tighter items-end place-items-center px-52 pb-9">
+        <h1 className={`${koulen.className}`}>LET&apos;S</h1>
         <Image
           src={luci}
           height={300}
@@ -14,7 +21,7 @@ const Contact = () => {
           className="rounded-full"
           alt="No img found"
         />
-        <h1>WORK</h1>
+        <h1 className={`${koulen.className}`}>WORK</h1>
       </div>
       <h4 className="bg-[#363636] h-fit w-fit text-[27px] font-extralight my-6 justify-self-center self-center mb-9">
         Feel Free To Reach Out To Me. I&apos;m Always Open To Discuss New
@@ -44,15 +51,17 @@ const Contact = () => {
       <h1 className="text-9xl font-extrabold tracking-tighter justify-self-center self-center">
         TOGETHER
       </h1>
-      <div className="rounded-full bg-[#454545] text-9xl px-3 py-12 my-20 text-[#121212] grid grid-cols-4 mx-24 font-extrabold tracking-tighter gap-0">
+      <div className="mt-12 mb-20 py-3 justify-self-center w-fit rounded-full bg-[#8e8e8e] text-4xl text-[#121212] grid grid-cols-4 font-extrabold tracking-tighter gap-0">
         <Image
           src={calender}
-          height={180}
-          width={180}
-          className="col-span-1"
+          height={60}
+          width={60}
+          className="col-span-1 justify-self-center self-center"
           alt="No img found"
         />
-        <h1 className="col-span-3 pr-3 justify-self-center self-center">
+        <h1
+          className={`col-span-3 pr-3 justify-self-center self-center ${koulen.className}`}
+        >
           BOOK A CALL
         </h1>
       </div>
