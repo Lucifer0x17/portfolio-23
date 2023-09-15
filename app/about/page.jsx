@@ -32,7 +32,7 @@ const AboutPage = () => {
       md:bg-[#123456]
       sm:bg-[#567890] 
       bg-[#456789]
-      mx-12 text-[#121212] px-12 py-20 my-12"
+      mx-12 text-[#121212] sm:px-12 px-6 py-20 my-12"
       >
         <AboutPara />
         {/* logos */}
