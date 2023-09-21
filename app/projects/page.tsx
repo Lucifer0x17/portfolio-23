@@ -41,6 +41,8 @@ const projectsPage = async () => {
               technologies={p.technologies}
               linkGit={p.githubLink}
               tags={p.tags}
+              hostedLink={p.hostedLink}
+              devfolioLink={p.devfolioLink}
             />
           ))}
         </div>

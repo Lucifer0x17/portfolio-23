@@ -128,7 +128,7 @@ const Navbar = ({ current }: any) => {
           <h3>ABOUT</h3>
         </div>
       </div> */}
-      <div className="fixed bottom-0 grid place-items-center w-[100vw] text-[#eeeeee] mix-blend-difference">
+      <div className="fixed bottom-0 grid place-items-center w-[100vw] text-[#eeeeee] mix-blend-difference z-30">
         <div
           className={` pr-[9px] rounded-t-2xl grid grid-cols-8 text-3xl ${koulen.className}`}
         >

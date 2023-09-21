@@ -2,13 +2,17 @@ import Image from "next/image";
 import githubLogo from "@/assets/github.png";
 import githubText from "@/assets/githubcurve.svg";
 import Navbar from "../components/Navbar";
+import Link from "next/link";
 // import line from "@/assets/line.png";
 
 const HomePage = async () => {
   return (
     <>
       <div className="h-[100vh] w-[100vw] grid showcaseBg">
-        <div className="grid h-[180px] w-fit justify-self-end place-items-end grid-cols-1 hover:-mt-12 -mt-24">
+        <Link
+          href="https://github.com/Lucifer0x17"
+          className="grid h-[180px] w-fit justify-self-end place-items-end grid-cols-1 hover:-mt-12 -mt-24"
+        >
           <Image
             src={githubLogo}
             height={90}
@@ -23,7 +27,7 @@ const HomePage = async () => {
             alt="github"
             className="mr-[45px] right-[45px] rotate -mt-[180px]"
           />
-        </div>
+        </Link>
         <div className="absolute top-[330px] w-[100vw] grid grid-flow-row">
           <div className="grid md:grid-cols-3 sm:grid-cols-2 md:w-[75%] sm:w-[100vw] w-[100vw]">
             {" "}
