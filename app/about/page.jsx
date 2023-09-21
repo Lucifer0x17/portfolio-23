@@ -8,6 +8,7 @@ import Education from "../containers/Education";
 import MoreAbout from "../containers/MoreAbout";
 import AboutPara from "../containers/AboutPara";
 import Cursor from "../components/Cursor";
+import Navbar from "../components/Navbar";
 
 const lato = Lato({
   subsets: ["latin"],
@@ -23,26 +24,25 @@ const koulen = Koulen({
 const AboutPage = () => {
   // const [workData, setWorkData] = useState("hidden");
   return (
-    <div>
-      <AboutShowcase />
-      {/* white rectangle */}
-      <div
-        className="rounded-[27px] 
-        lg:bg-[#d01818]
-      md:bg-[#123456]
-      sm:bg-[#567890] 
-      bg-[#456789]
+    <>
+      <div>
+        <AboutShowcase />
+        {/* white rectangle */}
+        <div
+          className="rounded-[27px] bg-[#eeeeee]
       mx-12 text-[#121212] sm:px-12 px-6 py-20 my-12"
-      >
-        <AboutPara />
-        {/* logos */}
-        <div></div>
-        <WorkExperience />
-        <Education />
-        <MoreAbout />
+        >
+          <AboutPara />
+          {/* logos */}
+          <div></div>
+          <WorkExperience />
+          <Education />
+          <MoreAbout />
+        </div>
+        <Contact />
       </div>
-      <Contact />
-    </div>
+      <Navbar current="about" />
+    </>
   );
 };
 

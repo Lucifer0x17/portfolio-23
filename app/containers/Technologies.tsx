@@ -30,11 +30,14 @@ const Technologies = async () => {
     return chunks;
   }
 
-  const imageFilenamesArr = chunkArray(imageFilenames, 3);
+  const imageFilenamesArr = chunkArray(imageFilenames, 2);
+  console.log(imageDirectory);
+  console.log(imageFilenames);
+  console.log(imageFilenamesArr);
 
   return (
-    <div className="text-[#212121] slider">
-      <h1 className={`text-6xl font-light ${lato.className} pb-12`}>
+    <div className="text-[#212121] slider px-20">
+      <h1 className={`text-6xl font-light ${lato.className} pt-12`}>
         I WORK WITH:
       </h1>
       <div className="grid grid-flow-col downAlt">

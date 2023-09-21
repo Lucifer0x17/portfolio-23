@@ -17,7 +17,7 @@ const koulen = Koulen({
 
 const WorkExperience = async () => {
   const workExp = await sanityClient.fetch(query);
-  // console.log("data:", workExp);
+  console.log("data:", workExp);
 
   return (
     <div className="pt-20">
@@ -32,8 +32,8 @@ const WorkExperience = async () => {
         EXPERIENCE
       </h2>
       <div>
-        {workEx.map((experience, id) => (
-          <DataRow key={id} experience={experience} />
+        {workExp.map((experience: any, _id: any) => (
+          <DataRow key={_id} experience={experience} />
         ))}
       </div>
     </div>

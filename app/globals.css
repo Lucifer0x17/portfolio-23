@@ -27,6 +27,7 @@
 
 .showcaseBg {
   background: url(../assets/bgShowcase.png) fixed no-repeat;
+  background-size: 100vw 100vh;
 }
 
 .rotate180 {
@@ -61,3 +62,15 @@
 .lefting > :nth-child(odd) {
   padding-right: 90px;
 } */
+
+.home > :first-child {
+  border-bottom: 3px solid #eeeeee;
+}
+
+.projects > :nth-child(3) {
+  border-bottom: 3px solid #eeeeee;
+}
+
+.about > :nth-child(5) {
+  border-bottom: 3px solid #eeeeee;
+}

@@ -19,7 +19,7 @@ export default function RootLayout({
       <body className="bg-[#131313] text-[#EEEEEE]">
         {children}
         {/* <Footer /> */}
-        <Navbar />
+        {/* <Navbar /> */}
       </body>
     </html>
   );
