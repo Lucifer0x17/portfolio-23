@@ -7,7 +7,7 @@ const query = groq`*[_type == "projects"]`;
 
 export default async function Home() {
   const projects = await sanityClient.fetch(query);
-  // console.log("data:",projects)
+  // console.log("data:", projects);
 
   return (
     <main>

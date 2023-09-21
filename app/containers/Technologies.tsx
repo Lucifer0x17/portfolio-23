@@ -30,21 +30,24 @@ const Technologies = async () => {
     return chunks;
   }
 
-  const imageFilenamesArr = chunkArray(imageFilenames, 2);
-  console.log(imageDirectory);
-  console.log(imageFilenames);
-  console.log(imageFilenamesArr);
+  const imageFilenamesArr = chunkArray(imageFilenames, 3);
+  // console.log(imageDirectory);
+  // console.log(imageFilenames);
+  // console.log(imageFilenamesArr);
 
   return (
-    <div className="text-[#212121] slider px-20">
-      <h1 className={`text-6xl font-light ${lato.className} pt-12`}>
-        I WORK WITH:
-      </h1>
+    <div className="text-[#212121] bg-[#eeeeee] rounded-md mx-12 slider px-20 py-12 grid grid-flow-row">
+      <h1 className={`text-6xl font-light ${lato.className}`}>I WORK WITH:</h1>
       <div className="grid grid-flow-col downAlt">
         {imageFilenamesArr.map((ex: Array<string>) => (
           <TechColumn images={ex} />
         ))}
       </div>
+      <h1
+        className={`place-self-center text-3xl italic pt-9 ${lato.className} font-light`}
+      >
+        Other Technologies: Lorem, ipsum, aiejf, tyu, ojbjnk, dfg
+      </h1>
       {/* <GalleryPage /> */}
     </div>
   );

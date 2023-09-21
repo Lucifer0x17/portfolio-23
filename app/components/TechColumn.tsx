@@ -19,7 +19,7 @@ const TechColumn = ({ images }: { images: Array<string> }) => {
       {images.map((el: string) => (
         <div className="grid place-self-center p-1">
           <Image
-            className="img place-self-center"
+            className="img place-self-center iconTech"
             width={120}
             height={120}
             alt={"alt"}
