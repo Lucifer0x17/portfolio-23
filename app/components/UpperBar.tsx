@@ -1,5 +1,6 @@
 import React from "react";
 import { Koulen, Lato } from "next/font/google";
+import Link from "next/link";
 
 const lato = Lato({
   subsets: ["latin"],
@@ -38,9 +39,14 @@ const UpperBar = () => {
         >
           Available September 2023
         </h5>
-        <div className="lg:col-span-1 md:col-span-1 sm:col-span-2 col-span-2 bg-[#eeeeee] text-[#212121] w-fit h-fit px-[20px] py-[8px] rounded-full justify-self-end hover:bg-[#212121] hover:text-[#eeeeee] hover:border-2 border-solid hover:px-[18px] hover:py-[6px]">
-          <h4 className="lg:text-lg md:text-sm ">Get in Touch</h4>
-        </div>
+        <Link
+          href="https://calendly.com/lucifer0x17"
+          className="lg:col-span-1 md:col-span-1 sm:col-span-2 col-span-2 bg-[#eeeeee] text-[#212121] w-fit h-fit px-[20px] py-[8px] rounded-full justify-self-end hover:bg-[#212121] hover:text-[#eeeeee] hover:border-2 border-solid hover:px-[18px] hover:py-[6px]"
+        >
+          <div className="">
+            <h4 className="lg:text-lg md:text-sm ">Get in Touch</h4>
+          </div>
+        </Link>
       </div>
     </div>
   );

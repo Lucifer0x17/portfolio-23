@@ -2,6 +2,7 @@ import Image from "next/image";
 import luci from "@/assets/luci.jpeg";
 import calender from "@/assets/calender.png";
 import { Koulen } from "next/font/google";
+import Link from "next/link";
 
 const koulen = Koulen({
   subsets: ["latin"],
@@ -53,9 +54,12 @@ const Contact = () => {
       <div className="grid md:grid-cols-5 grid-cols-1 px-30 mx-20 mb-0">
         <div className="grid grid-cols-4 gap-0 col-span-1 justify-self-center self-center">
           <div className="bg-[#eeeeee] text-[#212121] rounded-full px-3 py-3 h-2 w-2 place-self-end self-center col-span-1"></div>
-          <span className="hover:bg-[#eeeeee] hover:text-[#212121] hover:rounded-full lg:text-3xl md:text-xl text-xl px-6 py-1 font-extralight col-span-3">
-            GitHub
-          </span>
+          <Link
+            href="https://github.com/Lucifer0x17"
+            className="hover:bg-[#eeeeee] hover:text-[#212121] hover:rounded-full lg:text-3xl md:text-xl text-xl px-6 py-1 font-extralight col-span-3"
+          >
+            <span className="">GitHub</span>
+          </Link>
         </div>
         <div className="grid grid-cols-7 gap-0 md:col-span-3 col-span-1 justify-self-center self-center">
           <div className="bg-[#eeeeee] text-[#212121] rounded-full px-3 py-3 h-2 w-2 place-self-end self-center col-span-1"></div>
@@ -65,9 +69,12 @@ const Contact = () => {
         </div>
         <div className="grid grid-cols-4 gap-0 col-span-1 justify-self-center self-center">
           <div className="bg-[#eeeeee] text-[#212121] rounded-full px-3 py-3 h-2 w-2 place-self-end self-center col-span-1"></div>
-          <span className="hover:bg-[#eeeeee] hover:text-[#212121] hover:rounded-full lg:text-3xl md:text-xl text-xl px-6 py-1 font-extralight col-span-3">
-            LinkedIn
-          </span>
+          <Link
+            href="https://www.linkedin.com/in/ayushagrawal0x17/"
+            className="hover:bg-[#eeeeee] hover:text-[#212121] hover:rounded-full lg:text-3xl md:text-xl text-xl px-6 py-1 font-extralight col-span-3"
+          >
+            <span className="">LinkedIn</span>
+          </Link>
         </div>
       </div>
       <h1
@@ -75,7 +82,10 @@ const Contact = () => {
       >
         TOGETHER
       </h1>
-      <div className="mt-0 mb-20 py-3 justify-self-center w-fit rounded-full bg-[#8e8e8e] text-4xl text-[#121212] grid grid-cols-4 font-extrabold tracking-tighter gap-0">
+      <Link
+        href="https://calendly.com/lucifer0x17"
+        className="mt-0 mb-20 py-3 justify-self-center w-fit rounded-full bg-[#8e8e8e] text-4xl text-[#121212] grid grid-cols-4 font-extrabold tracking-tighter gap-0 hover:bg-[#eeeeee]"
+      >
         <Image
           src={calender}
           height={60}
@@ -88,7 +98,7 @@ const Contact = () => {
         >
           BOOK A CALL
         </h1>
-      </div>
+      </Link>
     </div>
   );
 };
