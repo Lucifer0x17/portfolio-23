@@ -7,6 +7,7 @@ import Navbar from "../components/Navbar";
 import { Koulen, Lato } from "next/font/google";
 import ProjectCard from "../components/ProjectCard";
 import { groq } from "next-sanity";
+import Contact from "../containers/Contact";
 const query = groq`*[_type == "projects"]`;
 
 const lato = Lato({
@@ -47,6 +48,7 @@ const projectsPage = async () => {
           ))}
         </div>
       </div>
+      <Contact />
       <Navbar current="projects" />
     </>
   );
