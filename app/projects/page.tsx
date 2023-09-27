@@ -8,6 +8,7 @@ import { Koulen, Lato } from "next/font/google";
 import ProjectCard from "../components/ProjectCard";
 import { groq } from "next-sanity";
 import Contact from "../containers/Contact";
+import Projects from "../containers/Projects";
 const query = groq`*[_type == "projects"]`;
 
 const lato = Lato({
@@ -34,19 +35,7 @@ const projectsPage = async () => {
         {/* technologies */}
         <Technologies />
         {/* projects */}
-        <div className="grid grid-cols-3 text-[#212121] m-12 gap-6">
-          {projects.map((p: any) => (
-            <ProjectCard
-              title={p.name}
-              desc={p.description}
-              technologies={p.technologies}
-              linkGit={p.githubLink}
-              tags={p.tags}
-              hostedLink={p.hostedLink}
-              devfolioLink={p.devfolioLink}
-            />
-          ))}
-        </div>
+        <Projects />
       </div>
       <Contact />
       <Navbar current="projects" />

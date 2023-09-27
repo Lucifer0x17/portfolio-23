@@ -15,13 +15,13 @@ const koulen = Koulen({
 
 const TechColumn = ({ images }: { images: Array<string> }) => {
   return (
-    <div className="grid place-self-center">
+    <div className="grid place-self-center md:grid-flow-row grid-flow-col">
       {images.map((el: string) => (
         <div className="grid place-self-center p-1 iconTech">
           <Image
             className="img place-self-center"
-            width={120}
-            height={120}
+            width={300}
+            height={300}
             alt={"alt"}
             src={`/techs/${el}`}
             key={el}

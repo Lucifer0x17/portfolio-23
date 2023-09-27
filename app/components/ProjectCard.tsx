@@ -46,7 +46,7 @@ const ProjectCard = ({
         <div className="grid grid-flow-col">
           {tags.map((tag: any) => (
             <h6
-              className={`bg-[#212121] text-[#eeeeee] rounded-full px-3 py-1 w-fit place-self-center font-light text-xs ${lato.className} tag`}
+              className={`bg-[#212121] text-[#eeeeee] rounded-full px-3 py-1 w-fit place-self-center font-light text-xs ${lato.className}`}
             >
               {tag}
             </h6>
@@ -62,10 +62,10 @@ const ProjectCard = ({
         >
           {desc}
         </p>
-        <div className="grid grid-flow-col gap-2">
+        <div className="grid grid-flow-col gap-[1px]">
           <Link
             href={linkGit}
-            className="grid grid-flow-col place-self-center py-3"
+            className="grid grid-flow-col place-self-center py-3 w-fit"
           >
             <Image
               src={GitHubLogo}
@@ -75,7 +75,7 @@ const ProjectCard = ({
               className="bg-[#212121] rounded-full p-[1px] place-self-center"
             />
             <h4
-              className={`${koulen.className} text-xl place-self-center leading-5 hover:bg-[#212121] hover:text-[#eeeeee] px-2 rounded-md py-1`}
+              className={`${koulen.className} text-xl place-self-center leading-5 hover:bg-[#212121] hover:text-[#eeeeee] px-2 rounded-md py-1 w-fit`}
             >
               Github Repository
             </h4>
@@ -83,7 +83,7 @@ const ProjectCard = ({
           {hostedLink ? (
             <Link
               href={hostedLink}
-              className="grid grid-flow-col place-self-center py-3"
+              className="grid grid-flow-col place-self-center py-3 w-fit"
             >
               <Image
                 src={WebLogo}
@@ -93,7 +93,7 @@ const ProjectCard = ({
                 className="bg-[#eeeeee] rounded-full place-self-center"
               />
               <h4
-                className={`${koulen.className} text-xl place-self-center leading-5 hover:bg-[#212121] hover:text-[#eeeeee] px-2 rounded-md py-1`}
+                className={`${koulen.className} text-xl place-self-center leading-5 hover:bg-[#212121] hover:text-[#eeeeee] px-2 rounded-md py-1 w-fit`}
               >
                 Hosted Link
               </h4>
@@ -104,7 +104,7 @@ const ProjectCard = ({
           {devfolioLink ? (
             <Link
               href={devfolioLink}
-              className="grid grid-flow-col place-self-center py-3"
+              className="grid grid-flow-col place-self-center py-3 w-fit"
             >
               <Image
                 src={DevLogo}
@@ -114,7 +114,7 @@ const ProjectCard = ({
                 className="bg-[#212121] rounded-full p-[3px] place-self-center"
               />
               <h4
-                className={`${koulen.className} text-xl place-self-center hover:bg-[#212121] hover:text-[#eeeeee] px-2 rounded-md py-1`}
+                className={`${koulen.className} text-xl place-self-center hover:bg-[#212121] hover:text-[#eeeeee] px-2 rounded-md py-1 w-fit`}
               >
                 Devfolio Link
               </h4>
