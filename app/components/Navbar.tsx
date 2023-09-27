@@ -137,15 +137,24 @@ const Navbar = ({ current }: any) => {
           <div
             className={`col-span-6 grid grid-cols-12 place-items-center pb-6 ${current}`}
           >
-            <Link href="/home" className={`col-span-3 hover:mb-3`}>
+            <Link
+              href="/home"
+              className={`col-span-3 hover:mb-3 hover:border-b-[2.4px] border-solid`}
+            >
               <h3>HOME</h3>
             </Link>
             <h3 className="col-span-1">•</h3>
-            <Link href="/projects" className="col-span-4 hover:mb-3">
+            <Link
+              href="/projects"
+              className="col-span-4 hover:mb-3 hover:border-b-[2.4px] border-solid"
+            >
               <h3 className="">PROJECTS</h3>
             </Link>
             <h3 className="col-span-1">•</h3>
-            <Link href="/about" className="col-span-3 hover:mb-3">
+            <Link
+              href="/about"
+              className="col-span-3 hover:mb-3 hover:border-b-[2.4px] border-solid"
+            >
               <h3 className="">ABOUT</h3>
             </Link>
           </div>

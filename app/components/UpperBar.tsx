@@ -14,7 +14,7 @@ const koulen = Koulen({
 });
 const UpperBar = () => {
   return (
-    <div className="fixed w-[100vw] grid grid-cols-2 text-[#eeeeee] mix-blend-difference px-8 py-3 place-items-center">
+    <div className="fixed w-[100vw] grid grid-cols-2 text-[#eeeeee] mix-blend-difference px-8 py-3 place-items-center z-50">
       <div className="justify-self-start grid grid-cols-2">
         <h4
           className={`justify-self-start col-span-1 ${koulen.className} text-3xl

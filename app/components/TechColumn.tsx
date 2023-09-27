@@ -17,9 +17,9 @@ const TechColumn = ({ images }: { images: Array<string> }) => {
   return (
     <div className="grid place-self-center">
       {images.map((el: string) => (
-        <div className="grid place-self-center p-1">
+        <div className="grid place-self-center p-1 iconTech">
           <Image
-            className="img place-self-center iconTech"
+            className="img place-self-center"
             width={120}
             height={120}
             alt={"alt"}
@@ -27,7 +27,7 @@ const TechColumn = ({ images }: { images: Array<string> }) => {
             key={el}
           />
           <h3
-            className={`place-self-center italic text-sm font-normal${lato.className}`}
+            className={`mt-[-36px] hidden place-self-center italic text-sm font-normal${lato.className}`}
           >
             {el.split(".")[0]}
           </h3>

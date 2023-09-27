@@ -7,6 +7,7 @@
   padding: 0;
   /* cursor: none; */
   cursor: url("../assets/cursor.png"), auto;
+  transition: 0.24s;
 }
 
 .cursor {
@@ -42,8 +43,14 @@
   animation: rotation 9s infinite linear;
 }
 
-.iconTech:hover {
-  animation: rotation 1s infinite linear;
+.iconTech:hover > :first-child {
+  margin-bottom: 24px;
+  transition: 0.6s;
+}
+
+.iconTech:hover > :nth-child(2) {
+  display: block;
+  transition: 0.6;
 }
 
 @keyframes rotation {
@@ -55,9 +62,50 @@
   }
 }
 
-.downAlt > :nth-child(even) {
-  padding-top: 30px;
+.tag:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
 }
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+/* .downAlt > :nth-child(even) {
+  padding-top: 30px;
+} */
 
 /* .lefting > :nth-child(even) {
   padding-left: 90px;
@@ -68,13 +116,16 @@
 } */
 
 .home > :first-child {
-  border-bottom: 3px solid #eeeeee;
+  border-bottom: 2.7px solid #eeeeee;
+  border-radius: 1.5px;
 }
 
 .projects > :nth-child(3) {
-  border-bottom: 3px solid #eeeeee;
+  border-bottom: 2.7px solid #eeeeee;
+  border-radius: 1.5px;
 }
 
 .about > :nth-child(5) {
-  border-bottom: 3px solid #eeeeee;
+  border-bottom: 2.7px solid #eeeeee;
+  border-radius: 1.5px;
 }
