@@ -1,12 +1,24 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { Lato } from "next/font/google";
 import { Education, Experience } from "../about/types";
 
 type DataProps = { experience?: Experience; education?: Education };
 const DataRow = ({ experience, education }: DataProps) => {
+  const [vis, SetVis] = useState("hidden");
+  const changeVis = () => {
+    if (vis == "hidden") {
+      SetVis("block");
+    } else {
+      SetVis("hidden");
+    }
+  };
   return (
     <div>
-      <div className="grid gap-6 md:grid-cols-4 grid-cols-2">
+      <div
+        className="grid gap-6 md:grid-cols-4 grid-cols-2 hover:bg-[#dddddd] p-3 rounded-md"
+        onClick={changeVis}
+      >
         <h5 className="text-md font-extralight col-span-2 md:col-span-1">
           {experience?.startDate || education?.startDate} -{" "}
           {experience?.endDate || education?.endDate || "Present"}
@@ -22,7 +34,7 @@ const DataRow = ({ experience, education }: DataProps) => {
         </p>
       </div>
       {experience && (
-        <div className="grid md:grid-cols-4">
+        <div className={`grid md:grid-cols-4 ${vis}`}>
           <div className="col-span-1"></div>
           <div className="col-span-3 font-light text-lg pt-3 italic">
             <ul>

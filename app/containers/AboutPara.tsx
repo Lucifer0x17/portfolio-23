@@ -17,16 +17,21 @@ const AboutPara = () => {
       <h2 className="text-4xl font-semibold sm:col-span-1">
         <span className={koulen.className}>ABOUT</span>
       </h2>
-      <p className="sm:col-span-3 lg:text-6xl md:text-5xl sm:text-3xl text-2xl font-normal lg:leading-[80px] md:leading-[60px] sm:leading-[40px] leading-[30px]">
+      <p className="sm:col-span-3 lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-normal lg:leading-[80px] md:leading-[60px] sm:leading-[40px] leading-[30px]">
         <span className={lato.className}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nulla,
-          reprehenderit voluptatibus enim commodi laborum,
+          As a versatile backend developer, I bring expertise in a wide array of
+          languages and technologies. With a track record of impactful
+          contributions and innovative projects, I've co-founded Polygon Guild
+          Jaipur, organized large-scale Web3 events, and optimized systems for
+          notable companies.
         </span>
         <span
-          className={`lg:text-4xl md:text-3xl sm:text-2xl text-xl leading-[30px] ${lato.className}`}
+          className={`lg:text-3xl md:text-2xl sm:text-xl text-lg leading-[30px] ${lato.className}`}
         >
-          veritatis consectetur pariatur, modi quod autem? Modi optio quo fuga
-          aspernatur ab cumque corrupti exercitationem?
+          My experience spans both the startup culture and established tech
+          giants. Passionate about Web3 and travel, I'm driven to create
+          efficient, scalable backend solutions that power the digital
+          landscape.
         </span>
       </p>
     </div>
