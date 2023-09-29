@@ -28,6 +28,7 @@ const AboutPara = () => {
         <span
           className={`lg:text-3xl md:text-2xl sm:text-xl text-lg leading-[30px] ${lato.className}`}
         >
+          {" "}
           My experience spans both the startup culture and established tech
           giants. Passionate about Web3 and travel, I'm driven to create
           efficient, scalable backend solutions that power the digital

@@ -37,7 +37,11 @@ const Technologies = async () => {
 
   return (
     <div className="text-[#212121] bg-[#eeeeee] rounded-md mx-12 slider px-20 py-12 grid grid-flow-row">
-      <h1 className={`text-6xl font-light ${lato.className}`}>I WORK WITH</h1>
+      <h1
+        className={`lg:text-6xl md:text-5xl sm:text-4xl text-4xl font-light md:place-self-start place-self-center pb-6 ${lato.className}`}
+      >
+        I WORK WITH
+      </h1>
       <div className="md:grid grid-flow-col md:grid-cols-7 downAlt hidden">
         {imageFilenamesArr.map((ex: Array<string>) => (
           <TechColumn images={ex} />
