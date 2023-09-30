@@ -46,6 +46,7 @@ const ProjectCard = ({
         <div className="grid grid-flow-col">
           {tags.map((tag: any) => (
             <h6
+              key={tag}
               className={`bg-[#212121] text-[#eeeeee] rounded-full px-3 py-1 w-fit place-self-center font-light text-xs ${lato.className}`}
             >
               {tag}

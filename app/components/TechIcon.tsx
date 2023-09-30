@@ -5,7 +5,7 @@ import luci from "@/assets/luci.jpeg";
 const TechIcon = (imag: any) => {
   return (
     <div>
-      <img src={imag} alt="" className="h-[150px] w-[150px]" />
+      <Image src={imag} alt="" className="h-[150px] w-[150px]" />
       {/* <Image href={imag} height={150} width={150} /> */}
     </div>
   );

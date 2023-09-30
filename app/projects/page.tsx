@@ -26,7 +26,7 @@ const koulen = Koulen({
 const projectsPage = async () => {
   // const git = "/git.svg";
   const projects = await sanityClient.fetch(query);
-  console.log("data:", projects);
+  // console.log("data:", projects);
 
   return (
     <>

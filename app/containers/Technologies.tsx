@@ -44,12 +44,12 @@ const Technologies = async () => {
       </h1>
       <div className="md:grid grid-flow-col md:grid-cols-7 downAlt hidden">
         {imageFilenamesArr.map((ex: Array<string>) => (
-          <TechColumn images={ex} />
+          <TechColumn key={ex[0]} images={ex} />
         ))}
       </div>
       <div className="sm:grid grid-flow-row downAlt md:hidden">
         {imageFilenamesArr.map((ex: Array<string>) => (
-          <TechColumn images={ex} />
+          <TechColumn key={ex[0]} images={ex} />
         ))}
       </div>
       <h1

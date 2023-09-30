@@ -12,9 +12,9 @@ export default async function Home() {
   return (
     <main>
       <div>hi</div>
-      {projects.map((p: any) => (
-        <div>{p.name}</div>
-      ))}
+      {/* {projects.map((p: any) => (
+        <div key={p.}>{p.name}</div>
+      ))} */}
     </main>
   );
 }

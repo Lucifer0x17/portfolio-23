@@ -5,10 +5,12 @@ const query = groq`*[_type == "projects"]`;
 
 const Projects = async () => {
   const projects = await sanityClient.fetch(query);
+  // console.log(projects);
   return (
     <div className="grid lg:grid-cols-3 md:grid-cols-2 text-[#212121] m-12 gap-6">
       {projects.map((p: any) => (
         <ProjectCard
+          key={p._id}
           title={p.name}
           desc={p.description}
           technologies={p.technologies}
