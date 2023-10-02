@@ -37,7 +37,7 @@ const HomePage = async () => {
             </h1>
           </div>
           <h2 className="lg:text-[42px] md:text-4xl sm:text-3xl text-2xl font-thin italic place-self-center md:place-self-start">
-            LOREM TEXT HERE BACKEND DEVELOPER
+          Backend Specialist | Infrastructure Developer | Adaptable
           </h2>
         </div>
       </div>
